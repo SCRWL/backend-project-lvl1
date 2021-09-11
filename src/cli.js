@@ -1,8 +1,9 @@
 import readlineSync from 'readline-sync';
 
-const whatName = () => {
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
+export const Start = () => {
+  console.log('Welcome to the Brain Games!');
 };
 
-export default whatName;
+export const cin = (string) => {
+  return readlineSync.question(string);
+};

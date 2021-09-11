@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import whatName from '../src/cli.js';
+import * as game from '../src/cli.js';
 
-console.log('Welcome to the Brain Games!');
-whatName();
+game.Start();
+console.log(`Hello, ${game.cin('May I have your name? ')}`);
