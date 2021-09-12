@@ -4,11 +4,11 @@ export const Start = () => {
   console.log('Welcome to the Brain Games!');
 };
 
-export const cin = (string) => readlineSync.question(string);
-
 export const helloUser = (username) => {
   console.log(`Hello, ${username}!`);
 };
+
+export const cin = (string) => readlineSync.question(string);
 
 export const randomNum = (max) => Math.floor(Math.random() * max);
 
