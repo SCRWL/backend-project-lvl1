@@ -1,4 +1,6 @@
-import {randomNum, plus, multipl, minus} from '../others.js';
+import {
+  randomNum, plus, multipl, minus,
+} from '../others.js';
 
 const calc = () => {
   const operators = ['+', '*', '-'];

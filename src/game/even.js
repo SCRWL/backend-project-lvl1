@@ -1,4 +1,4 @@
-import {randomNum} from "../others.js";
+import { randomNum } from '../others.js';
 
 const evenOrNot = () => {
   const randomInt = randomNum(100);

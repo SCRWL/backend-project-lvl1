@@ -10,4 +10,3 @@ export const helloUser = (username) => {
 
 export const cin = (string) => readlineSync.question(string);
 export const win = (name) => `Congratulations, ${name}!`;
-

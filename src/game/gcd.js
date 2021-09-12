@@ -1,4 +1,4 @@
-import {randomNum} from "../others.js";
+import { randomNum } from '../others.js';
 
 const NOD = (x, y) => {
   if (y > x) return NOD(y, x);

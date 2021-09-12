@@ -1,4 +1,4 @@
-import {randomNum} from '../others.js';
+import { randomNum } from '../others.js';
 
 const isPrime = () => {
   const question = randomNum(100);
