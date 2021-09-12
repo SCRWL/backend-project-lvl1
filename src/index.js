@@ -11,6 +11,9 @@ export const startGame = (game) => {
   if (game === 'brain-gcd') {
     return games.gcd();
   }
+  if (game === 'brain-progression') {
+    return games.progres();
+  }
   return 'Error';
 };
 
