@@ -4,10 +4,14 @@ import * as games from './games.js';
 export const startGame = (game) => {
   if (game === 'brain-even') {
     return games.evenOrNot();
-  } if (game === 'brain-calc') {
+  }
+  if (game === 'brain-calc') {
     return games.calc();
   }
-  return 'idk';
+  if (game === 'brain-gcd') {
+    return games.gcd();
+  }
+  return 'Error';
 };
 
 export const CorrectAnswer = (gameArr) => {

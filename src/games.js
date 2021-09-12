@@ -21,3 +21,17 @@ export const calc = () => {
       return [question, cli.minus(x, y)];
   }
 };
+
+export const gcd = () => {
+  let a = cli.randomNum(100);
+  let b = cli.randomNum(50);
+  const question = `${a} ${b}`;
+  let answer = NOD(a,b);
+  return [question, String(answer)];
+};
+
+const NOD = (x, y) => {
+  if (y > x) return NOD(y, x);
+  if (!y) return x;
+  return NOD(y, x % y);
+};
