@@ -1,7 +1,7 @@
 import { randomNum } from '../others.js';
 
 const isPrime = () => {
-  const question = randomNum(100);
+  const question = randomNum(99) + 1;
   let answer = 'yes';
   for (let i = 2; i < question; i += 1) {
     if (question % i === 0) {
