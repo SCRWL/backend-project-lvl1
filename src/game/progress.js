@@ -2,10 +2,10 @@ import { randomNum } from '../others.js';
 
 const progres = () => {
   const first = randomNum(50);
-  const second = first + randomNum(10);
-  const arr = [first, second];
-  for (let i = 0; i < 8; i += 1) {
-    arr.push(arr[i] + arr[i + 1]);
+  const step = randomNum(9) + 1;
+  const arr = [first];
+  for (let i = 0; i < 9; i += 1) {
+    arr.push(arr[i] + step);
   }
   const miss = randomNum(arr.length);
   let question = '';
