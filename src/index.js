@@ -1,21 +1,25 @@
 import * as cli from './cli.js';
-import * as games from './games.js';
+import even from './game/even.js';
+import calc from './game/calc.js';
+import gcd from './game/gcd.js';
+import progres from './game/progress.js';
+import isPrime from './game/prime.js';
 
 export const startGame = (game) => {
   if (game === 'brain-even') {
-    return games.evenOrNot();
+    return even();
   }
   if (game === 'brain-calc') {
-    return games.calc();
+    return calc();
   }
   if (game === 'brain-gcd') {
-    return games.gcd();
+    return gcd();
   }
   if (game === 'brain-progression') {
-    return games.progres();
+    return progres();
   }
   if (game === 'brain-prime') {
-    return games.isPrime();
+    return isPrime();
   }
   return 'Error';
 };
