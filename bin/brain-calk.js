@@ -5,5 +5,5 @@ import * as logic from '../src/index.js';
 cli.Start();
 const username = cli.cin('May I have your name? ');
 cli.helloUser(username);
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
-console.log(logic.threeAnswers('brain-even', username));
+console.log('What is the result of the expression?');
+console.log(logic.threeAnswers('brain-calc', username));

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import * as game from '../src/cli.js';
+import * as cli from '../src/cli.js';
 
-game.Start();
-console.log(`Hello, ${game.cin('May I have your name? ')}`);
+cli.Start();
+console.log(`Hello, ${cli.cin('May I have your name? ')}`);
