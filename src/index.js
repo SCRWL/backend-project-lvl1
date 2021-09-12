@@ -39,7 +39,7 @@ export const threeAnswers = (gameName, name) => {
   for (let i = 0; i < 3; i += 1) {
     const check = CorrectAnswer(startGame(gameName));
     if (check !== 'Correct!') {
-      return check;
+      return `${check}\nLet's try again, ${name}!`;
     }
     console.log(check);
   }
