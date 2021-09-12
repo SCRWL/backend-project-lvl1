@@ -56,3 +56,15 @@ export const progres = () => {
   }
   return [question, answer];
 };
+
+export const isPrime = () => {
+  const question = cli.randomNum(100);
+  let answer = 'yes';
+  for (let i = 2; i < question; i += 1) {
+    if (question % i === 0) {
+      answer = 'no';
+      break;
+    }
+  }
+  return [question, answer];
+};

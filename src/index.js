@@ -14,6 +14,9 @@ export const startGame = (game) => {
   if (game === 'brain-progression') {
     return games.progres();
   }
+  if (game === 'brain-prime') {
+    return games.isPrime();
+  }
   return 'Error';
 };
 
