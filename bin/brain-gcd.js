@@ -5,5 +5,5 @@ import * as logic from '../src/index.js';
 cli.Start();
 const username = cli.cin('May I have your name? ');
 cli.helloUser(username);
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
+console.log('Find the greatest common divisor of given numbers.');
 console.log(logic.threeAnswers('brain-gcd', username));
