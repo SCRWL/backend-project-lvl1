@@ -1,4 +1,4 @@
-### Hexlet tests, linter status and :
+### Hexlet tests, linter status and CodeClimate:
 [![Actions Status](https://github.com/SCRWL/backend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/SCRWL/backend-project-lvl1/actions/workflows/hexlet-check)
 
 [![Actions Status](https://github.com/SCRWL/backend-project-lvl1/actions/workflows/node.yml/badge.svg)](https://github.com/SCRWL/backend-project-lvl1/actions/workflows/node.yml)
