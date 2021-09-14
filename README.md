@@ -3,11 +3,9 @@
 
 [![Actions Status](https://github.com/SCRWL/backend-project-lvl1/actions/workflows/node.yml/badge.svg)](https://github.com/SCRWL/backend-project-lvl1/actions/workflows/node.yml)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/20e033bce587877112f5/maintainability)](https://codeclimate.com/github/SCRWL/backend-project-lvl1/maintainability)
 
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
 
-Видимо потер ридми предыдущий)
 ### Brain-even
 [![asciicast](https://asciinema.org/a/435440.svg)](https://asciinema.org/a/435440)
 

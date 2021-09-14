@@ -1,9 +1,5 @@
 #!/usr/bin/env node
-import * as cli from '../src/cli.js';
-import * as logic from '../src/index.js';
+import Core from '../src/index.js';
+import progress from '../src/game/progress.js';
 
-cli.Start();
-const username = cli.cin('May I have your name? ');
-cli.helloUser(username);
-console.log('What number is missing in the progression?');
-console.log(logic.threeAnswers('brain-progression', username));
+console.log(Core('What number is missing in the progression?', progress));

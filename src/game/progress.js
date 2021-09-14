@@ -1,6 +1,6 @@
 import { randomNum } from '../others.js';
 
-const progres = () => {
+const progress = () => {
   const first = randomNum(50);
   const step = randomNum(9) + 1;
   const arr = [first];
@@ -20,4 +20,4 @@ const progres = () => {
   }
   return [question, answer];
 };
-export default progres;
+export default progress;
