@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import Core from '../src/index.js';
-import calc from '../src/game/calc.js';
+import core from '../src/index.js';
+import calculate from '../src/game/calc.js';
 
-console.log(Core('What is the result of the expression?', calc));
+core('What is the result of the expression?', calculate);

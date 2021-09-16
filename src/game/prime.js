@@ -1,14 +1,17 @@
-import { randomNum } from '../others.js';
+import randomNum from '../utils.js';
 
-const isPrime = () => {
-  const question = randomNum(98) + 2;
-  let answer = 'yes';
-  for (let i = 2; i < question; i += 1) {
-    if (question % i === 0) {
-      answer = 'no';
-      break;
+const checkPrime = (number) => {
+  for (let i = 2; i < number; i += 1) {
+    if (number % i === 0) {
+      return 'no';
     }
   }
+  return 'yes';
+};
+
+const isPrime = () => {
+  const question = randomNum(2, 100);
+  const answer = checkPrime(question);
   return [question, answer];
 };
 export default isPrime;

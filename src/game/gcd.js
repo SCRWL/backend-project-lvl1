@@ -1,16 +1,16 @@
-import { randomNum } from '../others.js';
+import randomNum from '../utils.js';
 
-const NOD = (x, y) => {
-  if (y > x) return NOD(y, x);
+const checkGCD = (x, y) => {
+  if (y > x) return checkGCD(y, x);
   if (!y) return x;
-  return NOD(y, x % y);
+  return checkGCD(y, x % y);
 };
 
 const gcd = () => {
-  const a = randomNum(100);
-  const b = randomNum(50);
+  const a = randomNum(1, 100);
+  const b = randomNum(1, 50);
   const question = `${a} ${b}`;
-  const answer = NOD(a, b);
+  const answer = checkGCD(a, b);
   return [question, String(answer)];
 };
 export default gcd;

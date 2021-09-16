@@ -1,20 +1,24 @@
-import {
-  randomNum, plus, multipl, minus,
-} from '../others.js';
+import randomNum from '../utils.js';
 
-const calc = () => {
-  const operators = ['+', '*', '-'];
-  const x = randomNum(100);
-  const y = randomNum(10);
-  const randOp = operators[randomNum(3)];
-  const question = `${x} ${randOp} ${y}`;
-  switch (randOp) {
+const calculate = (x, y, operator) => {
+  switch (operator) {
     case '+':
-      return [question, plus(x, y)];
+      return String(x + y);
     case '*':
-      return [question, multipl(x, y)];
+      return String(x * y);
+    case '-':
+      return String(x - y);
     default:
-      return [question, minus(x, y)];
+      return 'Error';
   }
 };
-export default calc;
+
+const calcCore = () => {
+  const operators = ['+', '*', '-'];
+  const x = randomNum(0, 100);
+  const y = randomNum(0, 10);
+  const randOp = operators[randomNum(0, 2)];
+  const question = `${x} ${randOp} ${y}`;
+  return [question, calculate(x, y, randOp)];
+};
+export default calcCore;
