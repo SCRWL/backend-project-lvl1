@@ -6,7 +6,7 @@ const textRules = 'What number is missing in the progression?';
 const generationProgression = (first, step, length, index) => {
   let string = '';
   for (let i = 0; i < 9; i += 1) {
-    if (i === index) string += '..';
+    if (i === index) string += '.. ';
     else string += `${first + step * i} `;
   }
   return string;
