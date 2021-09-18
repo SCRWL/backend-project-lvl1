@@ -1,5 +1,5 @@
 import gatRandomInRange from '../utils.js';
-import engine from '../index.js';
+import playGame from '../index.js';
 
 const textRules = 'What number is missing in the progression?';
 
@@ -21,4 +21,4 @@ const generateRoundData = () => {
   const answer = String(first + step * hiddenIndex);
   return [question, answer];
 };
-export default () => engine(textRules, generateRoundData);
+export default () => playGame(textRules, generateRoundData);

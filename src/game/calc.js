@@ -1,5 +1,5 @@
 import gatRandomInRange from '../utils.js';
-import engine from '../index.js';
+import playGame from '../index.js';
 
 const operators = ['+', '*', '-'];
 const textRules = 'What is the result of the expression?';
@@ -17,6 +17,7 @@ const generateRoundData = () => {
   const y = gatRandomInRange(0, 10);
   const randomOperator = operators[gatRandomInRange(0, operators.length - 1)];
   const question = `${x} ${randomOperator} ${y}`;
-  return [question, String(getCalculate(x, y, randomOperator))];
+  const answer = String(getCalculate(x, y, randomOperator))
+  return [question, answer];
 };
-export default () => engine(textRules, generateRoundData);
+export default () => playGame(textRules, generateRoundData);

@@ -1,5 +1,5 @@
 import gatRandomInRange from '../utils.js';
-import engine from '../index.js';
+import playGame from '../index.js';
 
 const textRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -17,4 +17,4 @@ const generateRoundData = () => {
   const answer = (isPrime(question)) ? 'yes' : 'no';
   return [question, answer];
 };
-export default () => engine(textRules, generateRoundData);
+export default () => playGame(textRules, generateRoundData);

@@ -1,5 +1,5 @@
 import gatRandomInRange from '../utils.js';
-import engine from '../index.js';
+import playGame from '../index.js';
 
 const textRules = 'Find the greatest common divisor of given numbers.';
 
@@ -13,7 +13,7 @@ const generateRoundData = () => {
   const a = gatRandomInRange(1, 100);
   const b = gatRandomInRange(1, 50);
   const question = `${a} ${b}`;
-  const answer = findGCD(a, b);
-  return [question, String(answer)];
+  const answer = String(findGCD(a, b));
+  return [question, answer];
 };
-export default () => engine(textRules, generateRoundData);
+export default () => playGame(textRules, generateRoundData);
