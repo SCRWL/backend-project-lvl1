@@ -7,7 +7,7 @@ const isEven = (number) => (number % 2 === 0);
 
 const generateRoundData = () => {
   const question = gatRandomInRange(1, 100);
-  const answer = isEven(gatRandomInRange) ? 'yes' : 'no';
+  const answer = isEven(question) ? 'yes' : 'no';
   return [question, answer];
 };
 export default () => playGame(textRules, generateRoundData);
