@@ -17,7 +17,7 @@ const generateRoundData = () => {
   const y = gatRandomInRange(0, 10);
   const randomOperator = operators[gatRandomInRange(0, operators.length - 1)];
   const question = `${x} ${randomOperator} ${y}`;
-  const answer = String(getCalculate(x, y, randomOperator))
+  const answer = String(getCalculate(x, y, randomOperator));
   return [question, answer];
 };
 export default () => playGame(textRules, generateRoundData);
