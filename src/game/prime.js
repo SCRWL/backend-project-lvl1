@@ -1,5 +1,5 @@
-import randomNum from '../utils.js';
-import core from '../index.js';
+import gatRandomInRange from '../utils.js';
+import engine from '../index.js';
 
 const textRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -12,9 +12,9 @@ const isPrime = (number) => {
   return true;
 };
 
-const rules = () => {
-  const question = randomNum(2, 100);
+const generateRoundData = () => {
+  const question = gatRandomInRange(2, 100);
   const answer = (isPrime(question)) ? 'yes' : 'no';
   return [question, answer];
 };
-export default () => core(textRules, rules);
+export default () => engine(textRules, generateRoundData);

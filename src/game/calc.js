@@ -1,22 +1,22 @@
-import randomNum from '../utils.js';
-import core from '../index.js';
+import gatRandomInRange from '../utils.js';
+import engine from '../index.js';
 
 const operators = ['+', '*', '-'];
 const textRules = 'What is the result of the expression?';
 
-const calculate = (x, y, operator) => {
+const getCalculate = (x, y, operator) => {
   switch (operator) {
     case '+': return x + y;
     case '*': return x * y;
     case '-': return x - y;
-    default: return null;
+    default: throw new Error(`I don't know what is it: ${operator}'`);
   }
 };
-const rules = () => {
-  const x = randomNum(0, 100);
-  const y = randomNum(0, 10);
-  const randOp = operators[randomNum(0, operators.length - 1)];
-  const question = `${x} ${randOp} ${y}`;
-  return [question, String(calculate(x, y, randOp))];
+const generateRoundData = () => {
+  const x = gatRandomInRange(0, 100);
+  const y = gatRandomInRange(0, 10);
+  const randomOperator = operators[gatRandomInRange(0, operators.length - 1)];
+  const question = `${x} ${randomOperator} ${y}`;
+  return [question, String(getCalculate(x, y, randomOperator))];
 };
-export default () => core(textRules, rules);
+export default () => engine(textRules, generateRoundData);

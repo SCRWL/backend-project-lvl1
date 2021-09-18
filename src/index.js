@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 
 const round = 3;
 
-const core = (rules, generateRound) => {
+export default (rules, generateRound) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
@@ -20,4 +20,3 @@ const core = (rules, generateRound) => {
   }
   console.log(`Congratulations, ${name}!`);
 };
-export default core;
